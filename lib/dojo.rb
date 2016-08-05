@@ -17,4 +17,25 @@ class Dojo
     yield @team
   end
 
+  def to_current_instance(mo)
+
+  end
+
+  def growth
+
+  end
+
+  def to_klass(mo)
+
+  end
+
+  def to_all_instance(mo)
+
+  end
+
+  def self.extend_number!
+
+  end
+
+
 end
