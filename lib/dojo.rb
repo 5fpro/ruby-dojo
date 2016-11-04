@@ -41,10 +41,7 @@ class Dojo
 
   def self.extend_number!
     Fixnum.class_eval do
-      self.instance_eval {Array}
-        # x = arr[0]
-        # 1024
-      # end
+      self.instance_eval {}
     end
   end
 end
