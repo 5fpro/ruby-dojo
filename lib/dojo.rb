@@ -32,4 +32,16 @@ class Dojo
  		end
   end
 
+  def to_current_instance(module_name)
+    extend module_name
+  end
+
+  def to_klass(module_name)
+  	self.class.extend(module_name)
+  end
+
+  def to_all_instance(module_name)
+  	self.class.include(module_name)
+  end
+
 end
