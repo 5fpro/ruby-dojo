@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'byebug'
 
 describe 'dojo' do
   subject { Dojo.new }
@@ -38,7 +39,6 @@ describe 'dojo' do
           team.size < 5
         end
       }.to change { subject.team.size }.by(1)
-
       expect {
         subject.hire("Mary") do |team|
           team.size < 2
